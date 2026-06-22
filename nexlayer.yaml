@@ -1,0 +1,14 @@
+application:
+  name: onedev
+  pods:
+  - name: app
+    image: 1dev/onedev:latest
+    path: /
+    servicePorts:
+    - 6610
+    vars:
+      hibernate_dialect: "io.onedev.server.persistence.dialect.H2Dialect"
+    volumes:
+    - name: onedev-data
+      mountPath: /opt/onedev
+      size: 20Gi
