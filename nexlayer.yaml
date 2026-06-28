@@ -2,7 +2,7 @@ application:
   name: onedev
   pods:
   - name: app
-    image: 1dev/server:latest
+    image: mirror.gcr.io/1dev/server:latest
     path: /
     servicePorts:
     - 6610
